@@ -1,0 +1,142 @@
+
+
+# ==========================================
+# Node.js Production Docker Ignore
+# ==========================================
+
+# Dependencies
+# Install production dependencies inside Docker
+node_modules/
+**/node_modules/
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+*.secret
+
+# Version control
+.git/
+.gitignore
+.gitattributes
+.gitmodules/
+.svn/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Tests and test coverage
+tests/
+test/
+__tests__/
+__mocks__/
+coverage/
+.nyc_output/
+*.test.js
+*.test.ts
+*.test.tsx
+*.spec.js
+*.spec.ts
+*.spec.tsx
+jest.config.*
+vitest.config.*
+playwright-report/
+test-results/
+
+# Local build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+.cache/
+.turbo/
+.parcel-cache/
+*.tsbuildinfo
+.eslintcache
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+__MACOSX/
+.Trashes/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*~
+
+# CI/CD configuration
+.github/
+.gitlab/
+.circleci/
+.travis.yml
+Jenkinsfile
+azure-pipelines.yml
+
+# Docker development configuration
+docker-compose*.yml
+docker-compose*.yaml
+compose*.yml
+compose*.yaml
+
+# Documentation
+docs/
+documentation/
+CHANGELOG.md
+CONTRIBUTING.md
+
+# Local development files
+.devcontainer/
+.vagrant/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# Runtime artifacts
+*.pid
+*.pid.lock
+*.seed
+
+# Keep application files required by Docker
+!package.json
+!package-lock.json
+!src/
+!src/**
+

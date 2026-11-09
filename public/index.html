@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Release Beacon deployment verification dashboard" />
+    <title>Release Beacon</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <nav>
+        <a class="brand" href="/" aria-label="Release Beacon home">
+          <span class="brand-mark">RB</span>
+          <span>Release Beacon</span>
+        </a>
+        <span class="nav-label">deployment verification service</span>
+      </nav>
+
+      <section class="hero">
+        <div>
+          <p class="eyebrow">A developer handoff for DevOps practice</p>
+          <h1>Make every release <em>visible.</em></h1>
+          <p class="intro">
+            If you can see this page from an AWS public address, your application travelled from source code to a running production host.
+          </p>
+        </div>
+
+        <aside class="status-card" aria-live="polite">
+          <div class="status-heading">
+            <span id="status-dot" class="status-dot"></span>
+            <span id="status-text">Checking service</span>
+          </div>
+          <dl>
+            <div><dt>Environment</dt><dd id="environment">—</dd></div>
+            <div><dt>Release</dt><dd id="release">—</dd></div>
+            <div><dt>Runtime</dt><dd id="runtime">—</dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="pipeline" aria-label="Expected delivery path">
+        <p>Expected delivery path</p>
+        <ol>
+          <li><span>01</span>Commit</li>
+          <li><span>02</span>Test</li>
+          <li><span>03</span>Build</li>
+          <li><span>04</span>Publish</li>
+          <li><span>05</span>Deploy</li>
+          <li><span>06</span>Verify</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
+
